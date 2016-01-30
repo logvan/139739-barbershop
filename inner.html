@@ -2,13 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="logo-wrapper">
-          <img src="http://placehold.it/111x24" width="111" height="24" alt="logo">
+          <img src="img/logo.png" width="111" height="24" alt="logo">
         </div>
         <nav class="main-navigation">
           <ul>
@@ -34,7 +36,8 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main>
+      <div class="container clearfix">
         <section class="header">
           <h1>Средства для ухода</h1>
           <ul>
@@ -49,10 +52,10 @@
             </li>
           </ul>
         </section>
-        <div class="filters">
+        <div class="filters clearfix">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="checkbox">
-              <h2>Производители:</h2>
+              <legend>Производители:</legend>
               <input type="checkbox" id="Check-1" checked><label for="Check-1">Baxter of california</label> <br>
               <input type="checkbox" id="Check-2"><label for="Check-2">Mr natty </label><br>
               <input type="checkbox" id="Check-3" checked><label for="Check-3">Suavecito</label><br>
@@ -61,29 +64,31 @@
               <input type="checkbox" id="Check-6" checked><label for="Check-6">American crew</label><br>
             </div>
             <div class="radio">
-              <h2>Группы товаров:</h2>
-              <input type="radio" id="radio-1"name="Бритвенные пренадлежности"><label for="radio-1">Бритвенные пренадлежности</label><br>
-              <input type="radio" id="radio-2"name="Соедства для ухода" checked><label for="radio-2">Соедства для ухода</label><br>
-              <input type="radio" id="radio-3"name="Аксесссуары"><label for="radio-3">Аксессуары</label><br>
+              <legend>Группы товаров:</legend>
+              <input type="radio" id="radio-1" name="radio"><label for="radio-1">Бритвенные пренадлежности</label><br>
+              <input type="radio" id="radio-2" name="radio" checked><label for="radio-2">Средства для ухода</label><br>
+              <input type="radio" id="radio-3" name="radio"><label for="radio-3">Аксессуары</label><br>
             </div>
               <button class="btn" type="submit">Показать</button>
           </form>
         </div>
-        <section class="goods">
+        <section class="goods clearfix">
           <article class="card set">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165" alt="Набор для путешествий"></a>
+            <a href="#"><img src="img/set-1.jpg" width="220" height="165" alt="Набор для путешествий"></a>
             <div class="name-goods">
-              <a href="#">Набор для путешествий <span class="uppercase">"Baxter of california"</span></a>
+              <a href="#">Набор для путешествий<br>
+              <span class="uppercase">"Baxter of california"</span></a>
             </div>
             <div class="sale">
-              <p class="sale-price">2900 руб.</p>
+              <span class="sale-price">2900 руб.</span>
               <a href="#" class="sale-btn">Купить</a>
             </div>
           </article>
           <article class="card conditioner">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165"alt="Увлажняющий кондиционер"></a>
+            <a href="#"><img src="img/set-2.jpg" width="220" height="165"alt="Увлажняющий кондиционер"></a>
             <div class="name-goods">
-              <a href="#">Увлажняющий кондиционер <span class="uppercase">"Baxter of california"</span></a>
+              <a href="#">Увлажняющий кондиционер<br>
+              <span class="uppercase">"Baxter of california"</span></a>
             </div>
             <div class="sale">
               <p class="sale-price">750 руб.</p>
@@ -91,9 +96,10 @@
             </div>
           </article>
           <article class="card gel">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165" alt="Гель для волос"></a><br>
+            <a href="#"><img src="img/set-3.jpg" width="220" height="165" alt="Гель для волос"></a><br>
             <div class="name-goods">
-              <a href="#">Гель для волос <span class="uppercase">"Suavecito"</span></a>
+              <a href="#">Гель для волос<br>
+              <span class="uppercase">"Suavecito"</span></a>
             </div>
             <div class="sale">
               <p class="sale-price">290 руб.</p>
@@ -101,9 +107,10 @@
             </div>
           </article>
           <article class="card clay">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165" alt="Глина для укладки волос"></a>
+            <a href="#"><img src="img/set-4.jpg" width="220" height="165" alt="Глина для укладки волос"></a>
             <div class="name-goods">
-              <a href="#">Глина для укладки волос <span class="uppercase">"American crew"</span></a>
+              <a href="#">Глина для укладки волос<br>
+              <span class="uppercase">"American crew"</span></a>
             </div>
             <div class="sale">
               <p class="sale-price">500 руб.</p>
@@ -111,9 +118,10 @@
             </div>
           </article>
           <article class="card gel-tube">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165" alt="Глеь для волос"></a>
+            <a href="#"><img src="img/set-5.jpg" width="220" height="165" alt="Глеь для волос"></a>
             <div class="name-goods">
-              <a href="#">Гкль для волос <span class="uppercase">"American crew"</span></a>
+              <a href="#">Гкль для волос<br>
+              <span class="uppercase">"American crew"</span></a>
             </div>
             <div class="sale">
               <p class="sale-price">300 руб.</p>
@@ -121,42 +129,44 @@
             </div>
           </article>
           <article class="card shaving">
-            <a href="#"><img src="http://placehold.it/150x100" width="220" height="165" alt="Набор для бритья"></a>
+            <a href="#"><img src="img/set-6.jpg" width="220" height="165" alt="Набор для бритья"></a>
             <div class="name-goods">
-              <a href="#">Набор для бритья <span class="uppercase">"Baxter of california"<span></a>
+              <a href="#">Набор для бритья<br>
+              <span class="uppercase">"Baxter of california"<span></a>
             </div>
             <div claass="sale">
               <p class="sale-price">3900 руб.</p>
               <a href="#" class="sale-btn">Купить</a>
             </div>
           </article>
-        </section>
+
         <ul class="number">
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
         </ul>
-    </main>
-    <footer>
-      <div class="container">
-        <section class="footer-contacts">
-          Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (495) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграмм</a>
-        </section>
-        <section class="foooter-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="#">HTMLAcademy.ru</a>
         </section>
       </div>
-    </footer>
+    </main>
+    <div class="container">
+      <footer class="main-footer">
+         <section class="footer-contacts">
+           Барбершоп «Бородинский»<br>
+           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+           <a href="#">Как нас найти?</a><br>
+           Телефон: +7 (812) 666-02-66
+         </section>
+         <section class="footer-social">
+           <p>Давайте дружить!</p>
+           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+         </section>
+         <section class="footer-copyright">
+           <p>Разработано:</p>
+           <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+         </section>
+       </footer>
   </body>
 </html>
